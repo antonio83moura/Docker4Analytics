@@ -1,0 +1,18 @@
+services:
+  osm-anaconda:
+    image: osm
+    container_name: osm-anaconda
+    command: sh -c "jupyter notebook --notebook-dir=/opt/notebooks --ip='*' --port=8888 --no-browser --allow-root"
+    ports:
+      - 8888:8888
+    working_dir: /opt/notebooks
+    volumes:
+      - ./:/opt/notebooks
+    environment:
+      USER: root
+      DATA_PATH: data
+      PROJECT: project
+
+
+# volumes:
+#   todo-mysql-data:
