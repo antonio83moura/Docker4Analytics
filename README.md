@@ -10,3 +10,8 @@
 
 ## Iniciar Container
 `docker-compose up`
+
+![compose-up](./doc/img/docker-compose-up.jpg "compose-up")
+
+## Notebook
+![notebook-pandas](./doc/img/notebook-pandas.jpg "notebook-pandas")
